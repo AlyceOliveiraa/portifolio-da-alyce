@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio Alyce Oliveira de Sene</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        header button {
+            background-color: white;
+            color: #4CAF50;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #45a049;
+        }
+
+        /* Seções */
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Habilidades */
+        #skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #skills li {
+            background-color: #ddd;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Projetos */
+        .project-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project-card a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Formulário de Contato */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Alyce Oliveira de Sene</h1>
+            <p>Desenvolvedora Web | Designer Gráfico | Apaixonada por Tecnologia</p>
+            <button id="contactBtn">Entre em Contato</button>
+        </div>
+    </header>
+
+    <!-- Sobre mim -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Alyce Oliveira de Sene, tenho 18 anos e sou uma desenvolvedora web apaixonada por criar soluções criativas e funcionais. Com experiência em HTML, CSS, JavaScript e Design Gráfico, busco sempre me aprimorar e aprender novas tecnologias.</p>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills">
+        <div class="container">
+            <h2>Minhas Habilidades</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>Figma & Adobe XD</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1. Uma aplicação simples feita com HTML, CSS e JavaScript.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2. Uma aplicação interativa com ReactJS.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+                <div class="project-card">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3. Site responsivo criado com HTML e CSS.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Seu e-mail" required>
+                <textarea id="message" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Alyce Oliveira de Sene - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para funcionalidade do formulário de contato
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                alert('Mensagem enviada com sucesso! Obrigada pelo seu contato, ' + name);
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        });
+
+        // Exibe a seção de contato ao clicar no botão do cabeçalho
+        document.getElementById('contactBtn').addEventListener('click', function() {
+            window.scrollTo({
+                top: document.getElementById('contact').offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
